@@ -17,10 +17,9 @@ module Handle
     # config.api_only = true
     config.time_zone = 'Tokyo'
 
-    config.client_app = 'http://localhost:8000'
     config.action_dispatch.default_headers = {
       'Access-Control-Allow-Credentials' => 'true',
-      'Access-Control-Allow-Origin' => config.client_app,
+      'Access-Control-Allow-Origin' => 'http://localhost:8000',
       'Access-Control-Request-Method' => '*'
     }
   end
